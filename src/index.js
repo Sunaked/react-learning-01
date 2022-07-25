@@ -19,22 +19,14 @@ function App() {
 
   function ChangeCol() {
     console.log("color change");
-    setColor(randomColor);
+    document.body.style.background = randomColor();
   }
 
   return (
-    <div
-      className="page"
-      style={{
-        background: color,
-        padding: "10px",
-        width: width_proportionn,
-        height: height_proportion,
-      }}
-    >
+    <div>
       <div className="biggestPart">
         <button className="button" onClick={ChangeCol}>
-          Click Me!{" "}
+          Click Me to change color!
         </button>
       </div>
     </div>
