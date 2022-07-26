@@ -1,16 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 
-//  web-приложение, на котором есть кнопка изменить цвет
+//  web-приложение, на котором есть кнопка изменяющая цвет страницы
 
 function App() {
-  const [color, setColor] = useState("#2a3406");
-  console.log(color);
-  console.log(setColor);
-
-  const width_proportionn = "80%";
-  const height_proportion = "40%";
   function randomColor() {
     var colors = ["#2a3406", "#ff0076", "#6afffe"];
     var randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -18,7 +11,6 @@ function App() {
   }
 
   function ChangeCol() {
-    console.log("color change");
     document.body.style.background = randomColor();
   }
 
